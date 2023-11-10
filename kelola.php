@@ -24,31 +24,32 @@
 
       <!-- isi -->
       <div class="container">
-        <form action="proses.php" method="post"><div class="mb-3 row mt-3">
+        <form action="proses.php" method="post">
+          <div class="mb-3 row mt-3">
             <label for="nisn" class="col-sm-2 col-form-label">NISN</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="nisn" placeholder="Ex: 54635">
+              <input type="number" class="form-control" id="nisn" name="nisn" placeholder="Ex: 54635">
             </div>
           </div>
 
           <div class="mb-3 row mt-3">
             <label for="nama" class="col-sm-2 col-form-label">NAMA DIREKTUR</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nama" placeholder="Ex: Ahmad">
+              <input type="text" class="form-control" id="nama" name="nama_siswa" placeholder="Ex: Ahmad">
             </div>
           </div>
 
           <div class="mb-3 row mt-3">
             <label for="foto" class="col-sm-2 col-form-label">FOTO SISWA</label>
             <div class="col-sm-10">
-                <input class="form-control" type="file" id="foto">
+                <input class="form-control" type="file" id="foto" name="foto_siswa">
             </div>
           </div>
          
           <div class="mb-3 row mt-3">
             <label for="jenis-kelamin" class="col-sm-2 col-form-label">JENIS KELAMIN</label>
             <div class="col-sm-10">
-                <select class="form-select" id="jenis-kelamin">
+                <select class="form-select" id="jenis-kelamin" name="jenis_kelamin">
                     <option selected>Jenis Kelamin</option>
                     <option value="Laki-Laki">Laki-Laki</option>
                     <option value="perempuan">Perempuan</option>
@@ -59,7 +60,7 @@
           <div class="mb-3 row mt-3">
             <label for="alamat" class="col-sm-2 col-form-label">ALAMAT</label>
             <div class="col-sm-10">
-                <textarea class="form-control atur-ulang" placeholder="Masukkan Alamat Anda" id="alamat" style="height: 100px" ></textarea>
+                <textarea class="form-control atur-ulang" placeholder="Masukkan Alamat Anda" id="alamat" name="alamat" style="height: 100px" ></textarea>
             </div>
           </div>
           <?php
