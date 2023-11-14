@@ -24,7 +24,7 @@
 
       <!-- isi -->
       <div class="container">
-        <form action="proses.php" method="post">
+        <form action="proses.php" method="post" enctype="multipart/form-data">
           <div class="mb-3 row mt-3">
             <label for="nisn" class="col-sm-2 col-form-label">NISN</label>
             <div class="col-sm-10">
