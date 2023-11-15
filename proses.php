@@ -2,6 +2,7 @@
 include 'koneksi.php';
 
 if (isset ($_POST['aksi'])){
+    // add data
     if ($_POST['aksi']=="add"){
         $nisn =$_POST['nisn'];
         $nama =$_POST['nama_siswa'];
@@ -22,12 +23,20 @@ if (isset ($_POST['aksi'])){
             }else{
                 echo $query ;
             }
+            // edit data
 } else if($_POST['aksi']=="edit"){
     echo"tombol edit";
 }
 }
+// delete data
 if (isset($_GET['hapus'])) {
     $id_siswa = $_GET['hapus'];
+    $queryShow = "SELECT * FROM tb_siswa WHERE id_siswa = '$id_siswa';";
+    $sqlShow = mysqli_query($conn, $queryShow);
+    $result = mysqli_fetch_assoc($sqlShow);
+    // var_dump($result);
+    // die();
+    unlink("img/".$result['foto_siswa']);
     $query ="DELETE FROM tb_siswa WHERE id_siswa = '$id_siswa'";
     $sql = mysqli_query($conn,$query);
     if($sql){

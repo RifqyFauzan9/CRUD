@@ -64,11 +64,11 @@ $no = 0;
                   <td><?php echo ++$no?></td>
                   <td><?php echo $result ['nisn']?></td>
                   <td><?php echo $result ['nama_siswa']?></td>
-                  <td><img class="foto" src="img/<?php echo $result ['foto_siswa']?>" alt=""></td>
+                  <td><img style="width: 100px;" class="foto" src="img/<?php echo $result ['foto_siswa']?>" alt=""></td>
                   <td><?php echo $result ['jenis_kelamin']?></td>
                   <td><?php echo $result ['alamat']?></td>
                   <td>
-                    <a href="kelola.php?edit=<?php echo $result ['id_siswa']?>" style="margin-left: 10px;" type="button" class="btn btn-success btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square mb-1" viewBox="0 0 16 16">
+                    <a href="kelola.php?edit=<?php echo $result ['id_siswa']?>" style="margin-left: 10px;" type="button" class="btn btn-primary btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square mb-1" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                       </svg>
@@ -85,7 +85,7 @@ $no = 0;
             </tbody>
         </table>
       </div>
-      <a href="kelola.php" type="button" class="btn btn-primary mb-4">
+      <a href="kelola.php" type="button" class="btn btn-success mb-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill mb-1" viewBox="0 0 16 16">
             <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z"/>
           </svg>

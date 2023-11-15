@@ -28,21 +28,21 @@
           <div class="mb-3 row mt-3">
             <label for="nisn" class="col-sm-2 col-form-label">NISN</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="nisn" name="nisn" placeholder="Ex: 54635">
+              <input required type="number" class="form-control" id="nisn" name="nisn" placeholder="Ex: 54635">
             </div>
           </div>
 
           <div class="mb-3 row mt-3">
             <label for="nama" class="col-sm-2 col-form-label">NAMA DIREKTUR</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nama" name="nama_siswa" placeholder="Ex: Ahmad">
+              <input required type="text" class="form-control" id="nama" name="nama_siswa" placeholder="Ex: Ahmad">
             </div>
           </div>
 
           <div class="mb-3 row mt-3">
             <label for="foto" class="col-sm-2 col-form-label">FOTO SISWA</label>
             <div class="col-sm-10">
-                <input class="form-control" type="file" id="foto" name="foto_siswa">
+                <input required class="form-control" type="file" id="foto" name="foto_siswa">
             </div>
           </div>
          
@@ -60,17 +60,17 @@
           <div class="mb-3 row mt-3">
             <label for="alamat" class="col-sm-2 col-form-label">ALAMAT</label>
             <div class="col-sm-10">
-                <textarea class="form-control atur-ulang" placeholder="Masukkan Alamat Anda" id="alamat" name="alamat" style="height: 100px" ></textarea>
+                <textarea required class="form-control atur-ulang" placeholder="Masukkan Alamat Anda" id="alamat" name="alamat" style="height: 100px" ></textarea>
             </div>
           </div>
           <?php
           if(isset($_GET['edit'])){
             ?>
-            <button type="submit" value="edit" name="aksi" class="btn btn-primary btn-sm"><i class='bx bx-save'></i></button>
+            <button type="submit" value="edit" name="aksi" class="btn btn-success btn-sm"><i class='bx bx-save'></i></button>
             <?php
           }else{
             ?>
-            <button type="submit" value="add" name="aksi" class="btn btn-primary btn-sm"><i class='bx bxs-file-plus'></i></button>
+            <button type="submit" value="add" name="aksi" class="btn btn-success btn-sm"><i class='bx bxs-file-plus'></i></button>
          <?php }
          ?>
           <!-- back -->
