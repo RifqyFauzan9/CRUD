@@ -64,7 +64,7 @@ $no = 0;
                   <td><?php echo ++$no?></td>
                   <td><?php echo $result ['nisn']?></td>
                   <td><?php echo $result ['nama_siswa']?></td>
-                  <td><img style="width: 100px;" class="foto" src="img/<?php echo $result ['foto_siswa']?>" alt=""></td>
+                  <td><img style="width: 130px;" class="foto" src="img/<?php echo $result ['foto_siswa']?>" alt=""></td>
                   <td><?php echo $result ['jenis_kelamin']?></td>
                   <td><?php echo $result ['alamat']?></td>
                   <td>

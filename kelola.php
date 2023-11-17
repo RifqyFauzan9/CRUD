@@ -33,7 +33,7 @@
           </div>
 
           <div class="mb-3 row mt-3">
-            <label for="nama" class="col-sm-2 col-form-label">NAMA DIREKTUR</label>
+            <label for="nama" class="col-sm-2 col-form-label">NAMA SISWA</label>
             <div class="col-sm-10">
               <input required type="text" class="form-control" id="nama" name="nama_siswa" placeholder="Ex: Ahmad">
             </div>
