@@ -1,6 +1,6 @@
 <?php
 include 'koneksi.php';
-$query = "SELECT * FROM `tb_siswa`";
+$query = "SELECT * FROM `tb_siswaa`";
 $sql = mysqli_query($conn, $query);
 $no = 0;
 // var_dump($result);
