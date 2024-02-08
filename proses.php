@@ -31,7 +31,7 @@ if (isset($_POST['aksi'])) {
 // delete data
 if (isset($_GET['hapus'])) {
     $id_siswa = $_GET['hapus'];
-    $queryShow = "SELECT * FROM tb_siswa WHERE id_siswa = '$id_siswa';";
+    $queryShow = "SELECT * FROM tb_siswaa WHERE id_siswa = '$id_siswa';";
     $sqlShow = mysqli_query($conn, $queryShow);
     $result = mysqli_fetch_assoc($sqlShow);
     // var_dump($result);
